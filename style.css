@@ -1,0 +1,151 @@
+:root {
+  --bg: #0b0f14;
+  --card: #111826;
+  --text: #e6eefc;
+  --muted: #a9b6cf;
+  --accent: #7c5cff;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 15px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  background: var(--accent);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.hero {
+  display: flex;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left span {
+  color: var(--accent);
+}
+
+.badge {
+  background: rgba(124,92,255,0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--accent);
+}
+
+.hero-right {
+  flex: 1;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.success {
+  display: none;
+  color: #22c55e;
+  margin-top: 10px;
+}
+
+footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 30px 0;
+  margin-top: 40px;
+  color: var(--muted);
+}
