@@ -7,6 +7,7 @@
 }
 
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -124,6 +125,7 @@ nav a:hover {
   gap: 20px;
 }
 
+/* form */
 .contact form {
   display: flex;
   flex-direction: column;
@@ -135,6 +137,15 @@ input, textarea {
   padding: 10px;
   border-radius: 6px;
   border: none;
+
+  /* улучшение для темной темы */
+  background: #0f1624;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(169, 182, 207, 0.7);
 }
 
 .success {
@@ -148,4 +159,21 @@ footer {
   padding: 30px 0;
   margin-top: 40px;
   color: var(--muted);
+}
+
+/* ====== MOBILE / RESPONSIVE FIXES ====== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin-left: 12px;
+  }
 }
