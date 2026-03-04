@@ -3,11 +3,11 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: "/(.*)",
         headers: [
           {
-            key: 'Content-Security-Policy',
-            value: 'upgrade-insecure-requests',
+            key: "Content-Security-Policy",
+            value: "upgrade-insecure-requests",
           },
         ],
       },
