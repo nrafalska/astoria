@@ -3,6 +3,11 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(req: NextRequest) {
   const proto = req.headers.get('x-forwarded-proto');
+  const hostname = req.nextUrl.hostname;
+
+  if (hostname === 'localhost' || hostname === '127.0.0.1') {
+    return NextResponse.next();
+  }
 
   // Railway terminates TLS and forwards proto in this header
   if (proto && proto !== 'https') {

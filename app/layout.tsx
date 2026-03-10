@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
+import SiteFooter from '@/components/SiteFooter';
+import SiteHeader from '@/components/SiteHeader';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Adstera | Performance Marketing',
+  title: 'Adstera | Google Ads Campaign Management Platform',
   description:
-    'Adstera helps advertisers grow with clean acquisition, strict quality control and predictable results.',
+    'Adstera is a CRM platform for agencies and marketing teams to manage Google Ads accounts and campaigns under MCC workflows.',
 };
 
 export default function RootLayout({
@@ -14,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }
