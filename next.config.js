@@ -3,15 +3,15 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: "/(.*)",
         headers: [
           {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=31536000; includeSubDomains; preload',
+            key: "Strict-Transport-Security",
+            value: "max-age=31536000; includeSubDomains; preload",
           },
           {
-            key: 'Content-Security-Policy',
-            value: 'upgrade-insecure-requests',
+            key: "Content-Security-Policy",
+            value: "upgrade-insecure-requests",
           },
         ],
       },

@@ -26,6 +26,7 @@ export default function Home() {
               Adstera is a CRM platform designed for managing Google Ads
               accounts and campaigns under a manager account (MCC).
             </p>
+
             <div className="metric-grid" aria-label="Platform highlights">
               {metrics.map((item) => (
                 <article className="metric-card" key={item.label}>
@@ -70,6 +71,7 @@ export default function Home() {
               ))}
             </ul>
           </div>
+
           <div className="image-card image-card-light">
             <Image
               src="/images/workflow-graphic.svg"
