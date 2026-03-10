@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const features = [
   'Google Ads account management',
   'Campaign creation and management',
@@ -7,16 +9,43 @@ const features = [
   'Multi-account management under MCC',
 ];
 
+const metrics = [
+  { label: 'Accounts connected', value: '120+' },
+  { label: 'Weekly reports', value: '400+' },
+  { label: 'MCC workflows', value: 'Multi-client' },
+];
+
 export default function Home() {
   return (
     <main>
       <section className="hero section">
-        <div className="container">
-          <h1>Adstera – Google Ads Campaign Management Platform</h1>
-          <p className="lead">
-            Adstera is a CRM platform designed for managing Google Ads accounts
-            and campaigns under a manager account (MCC).
-          </p>
+        <div className="container hero-grid">
+          <div>
+            <h1>Adstera – Google Ads Campaign Management Platform</h1>
+            <p className="lead">
+              Adstera is a CRM platform designed for managing Google Ads
+              accounts and campaigns under a manager account (MCC).
+            </p>
+
+            <div className="metric-grid" aria-label="Platform highlights">
+              {metrics.map((item) => (
+                <article className="metric-card" key={item.label}>
+                  <p className="metric-value">{item.value}</p>
+                  <p className="metric-label">{item.label}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="image-card">
+            <Image
+              src="/images/hero-dashboard.svg"
+              alt="Adstera dashboard preview"
+              width={760}
+              height={520}
+              priority
+            />
+          </div>
         </div>
       </section>
 
@@ -33,13 +62,24 @@ export default function Home() {
       </section>
 
       <section className="section" aria-labelledby="features-title">
-        <div className="container content-card">
-          <h2 id="features-title">Features</h2>
-          <ul className="feature-list">
-            {features.map((feature) => (
-              <li key={feature}>{feature}</li>
-            ))}
-          </ul>
+        <div className="container split-card">
+          <div className="content-card">
+            <h2 id="features-title">Features</h2>
+            <ul className="feature-list">
+              {features.map((feature) => (
+                <li key={feature}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="image-card image-card-light">
+            <Image
+              src="/images/workflow-graphic.svg"
+              alt="Workflow illustration for MCC campaign management"
+              width={760}
+              height={420}
+            />
+          </div>
         </div>
       </section>
 
