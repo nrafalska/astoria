@@ -9,6 +9,7 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
+  // Railway terminates TLS and forwards proto in this header
   if (proto && proto !== 'https') {
     const url = req.nextUrl.clone();
     url.protocol = 'https:';

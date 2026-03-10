@@ -13,6 +13,7 @@ export default function SiteHeader() {
             <small>Google Ads Management Platform</small>
           </span>
         </Link>
+
         <nav aria-label="Main navigation" className="nav-links">
           <Link href="/">Home</Link>
           <Link href="/privacy">Privacy Policy</Link>

@@ -92,19 +92,29 @@ export default function Home() {
                       <span />
                     </div>
                   </article>
+
                   <article className="budget-panel">
                     <h3>Budget Allocation</h3>
+
                     <div className="progress-row">
                       <label>Search</label>
-                      <div><i style={{ width: '78%' }} /></div>
+                      <div>
+                        <i style={{ width: '78%' }} />
+                      </div>
                     </div>
+
                     <div className="progress-row">
                       <label>Display</label>
-                      <div><i style={{ width: '54%' }} /></div>
+                      <div>
+                        <i style={{ width: '54%' }} />
+                      </div>
                     </div>
+
                     <div className="progress-row">
                       <label>Video</label>
-                      <div><i style={{ width: '39%' }} /></div>
+                      <div>
+                        <i style={{ width: '39%' }} />
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -112,9 +122,18 @@ export default function Home() {
                 <article className="accounts-panel">
                   <h3>Client Accounts</h3>
                   <ul>
-                    <li><span>Northline Retail</span><em>Stable</em></li>
-                    <li><span>Acme Services</span><em>Scaling</em></li>
-                    <li><span>Valera Home</span><em>Review</em></li>
+                    <li>
+                      <span>Northline Retail</span>
+                      <em>Stable</em>
+                    </li>
+                    <li>
+                      <span>Acme Services</span>
+                      <em>Scaling</em>
+                    </li>
+                    <li>
+                      <span>Valera Home</span>
+                      <em>Review</em>
+                    </li>
                   </ul>
                 </article>
               </div>
@@ -145,6 +164,7 @@ export default function Home() {
               account governance, and client reporting.
             </p>
           </div>
+
           <div className="feature-grid">
             {features.map((feature) => (
               <article key={feature.title} className="feature-card">
@@ -169,6 +189,7 @@ export default function Home() {
               ))}
             </ol>
           </article>
+
           <article className="content-card">
             <h2>Business Fit</h2>
             <p>
@@ -187,7 +208,10 @@ export default function Home() {
           <p>
             For business, partnership, or compliance inquiries, contact us at:
           </p>
-          <a className="contact-email" href="mailto:anastasia@blackrock-traffic.com">
+          <a
+            className="contact-email"
+            href="mailto:anastasia@blackrock-traffic.com"
+          >
             anastasia@blackrock-traffic.com
           </a>
         </div>
