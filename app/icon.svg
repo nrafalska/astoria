@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Adstera icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2346"/>
+      <stop offset="100%" stop-color="#183a72"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6d9fff"/>
+      <stop offset="100%" stop-color="#88d3ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#bg)"/>
+  <path d="M64 26 33 102h16l7-18h16l7 18h16L64 26Zm0 34 6 16H58l6-16Z" fill="url(#mark)"/>
+</svg>
